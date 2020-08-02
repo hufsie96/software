@@ -2,7 +2,7 @@
 
 # https://docs.docker.com/engine/reference/builder/#from
 # java 8 사용
-#FROM java:8
+FROM java:8
 
 # https://docs.docker.com/engine/reference/builder/#expose
 # 애플리케이션 포트
