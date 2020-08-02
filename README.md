@@ -1,6 +1,6 @@
 # [Springboot]
 
-###Springboot study를 위한 demo source 입니다. 
+### Springboot study를 위한 demo source 입니다. 
 
 1. 첫번째 Case는 Thymeleaf template을 사용한 MVC 예제 입니다. 
 
@@ -11,7 +11,7 @@
 
 # [Docker]
 
-###Docker로 Springboot conatiner를 띄우기 위한 dockerfile를 작성 예제를 포함하고 있습니다. 
+### Docker로 Springboot conatiner를 띄우기 위한 dockerfile를 작성 예제를 포함하고 있습니다. 
 
 다음은 기본적인 docker 명령어 이다. 
 
