@@ -10,8 +10,13 @@ EXPOSE 8080
 
 # https://docs.docker.com/engine/reference/builder/#add
 # 애플리케이션 파일 추가
-ADD ./build/libs/demo-0.0.1-SNAPSHOT.jar application.jar
+RUN mkdir -p /engn/app/
+ADD ./build/libs/demo-0.0.1-SNAPSHOT.jar /engn/app/application.jar
 
 # https://docs.docker.com/engine/reference/builder/#entrypoint
-# 실행
-ENTRYPOINT ["java", "-jar", "-Xmx700m", "application.jar"]
+# https://docs.docker.com/engine/reference/builder/#cmd
+# https://docs.docker.com/engine/reference/builder/#run
+# 실행 아래의 차이점이 뭘까요?
+#ENTRYPOINT ["java", "-jar", "-Xmx700m", "/engn/app/application.jar"]
+#CMD ["java", "-jar", "-Xmx700m", "/engn/app/application.jar"]
+#RUN ["java", "-jar", "-Xmx700m", "/engn/app/application.jar"]
