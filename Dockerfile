@@ -17,6 +17,6 @@ ADD ./build/libs/springboot-study-0.0.1-SNAPSHOT.jar /engn/app/application.jar
 # https://docs.docker.com/engine/reference/builder/#cmd
 # https://docs.docker.com/engine/reference/builder/#run
 # 실행 아래의 차이점이 뭘까요?
-#ENTRYPOINT ["java", "-jar", "-Xmx700m", "/engn/app/application.jar"]
+ENTRYPOINT ["java", "-jar", "-Xmx700m", "/engn/app/application.jar"]
 #CMD ["java", "-jar", "-Xmx700m", "/engn/app/application.jar"]
 #RUN ["java", "-jar", "-Xmx700m", "/engn/app/application.jar"]
