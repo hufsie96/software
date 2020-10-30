@@ -19,7 +19,8 @@ EXPOSE 8080
 # https://docs.docker.com/engine/reference/builder/#add
 # 애플리케이션 파일 추가
 RUN mkdir -p /engn/app/
-ADD ./build/libs/springboot-study-0.0.1-SNAPSHOT.jar /engn/app/application.jar
+# ADD ./build/libs/springboot-study-0.0.1-SNAPSHOT.jar /engn/app/application.jar
+COPY --from=build /home/gradle/src/build/libs/*.jar /engn/app/application.jar
 
 # https://docs.docker.com/engine/reference/builder/#entrypoint
 # https://docs.docker.com/engine/reference/builder/#cmd
