@@ -17,7 +17,7 @@ steps:
   - '--image'
   - 'gcr.io/$PROJECT_ID/springboot-study:latest'
   - '--region'
-  - 'REGION'
+  - '${_REGION}'
   - '--platform'
   - 'managed'
 images:
