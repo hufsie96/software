@@ -21,4 +21,4 @@ steps:
   - '--platform'
   - 'managed'
 images:
-- 'gcr.io/$PROJECT_ID/springboot-study:latest'
+- 'gcr.io/$PROJECT_ID/springboot-study:latest' 
